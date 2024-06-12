@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>All Orders</h2>
+    <table class="table table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>Order ID</th>
+          <th>Item ID</th>
+          <th>User ID</th>
+          <th>Shipping Address</th>
+          <th>Payment Method</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{ order.orderId }}</td>
+          <td>{{ order.itemId }}</td>
+          <td>{{ order.userId }}</td>
+          <td>{{ order.shippingAddress }}</td>
+          <td>{{ order.paymentMethod }}</td>
+          <td>{{ order.status }}</td>
+          <td>
+            <button class="btn btn-success" (click)="markAsDelivered(order)">Mark as Delivered</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

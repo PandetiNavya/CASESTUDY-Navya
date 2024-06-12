@@ -1,0 +1,43 @@
+<div class="one">
+<nav class="navbar">
+    
+    <button routerLink="/frontpage" class="nav-link">Home</button>
+  </nav> 
+<div class="wrapper">
+    <div class="registration_form">
+      <div class="title">
+        Sign Up As Seller
+        Start your Journey in <br>
+        Quick Trade
+      </div>
+      <form (ngSubmit)="submitSignupForm()">
+        <div class="form_wrap">
+          <div class="input_wrap">
+            <label for="sellerName">Seller Name</label>
+            <input type="text" [(ngModel)]="signupData.SellerName" name="SellerName" required>
+          </div>
+          <div class="input_wrap">
+            <label for="sellerEmail">Email Address</label>
+            <input type="email" [(ngModel)]="signupData.SellerEmail" name="SellerEmail" required>
+          </div>
+          <div class="input_wrap">
+            <label for="sellerPwd">Password</label>
+            <input type="password" [(ngModel)]="signupData.SellerPwd" name="SellerPwd" required>
+          </div>
+          <div class="input_wrap">
+            <label for="sellerPhone">Phone Number</label>
+            <input type="text" [(ngModel)]="signupData.SellerPhone" name="SellerPhone">
+          </div>
+          <div class="input_wrap">
+            <label for="sellerAddress">Address</label>
+            <input type="text" [(ngModel)]="signupData.SellerAddress" name="SellerAddress">
+          </div>
+          <div class="input_wrap">
+            <button type="submit" class="submit_btn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  

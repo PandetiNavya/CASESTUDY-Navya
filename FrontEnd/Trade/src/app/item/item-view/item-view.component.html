@@ -1,0 +1,32 @@
+<!-- <div class="container">
+    <div class="card">
+        <h2>View Item</h2>
+        <div class="card-header bg-success text-white">
+           <h3>Item Information</h3>
+        </div>
+        <div class="card-body">
+            <p>Item Id: {{fetchedItem.ItemId}}</p>
+            <p>Item Name: {{fetchedItem.ItemName}}</p>
+            <p>Description: {{fetchedItem.Description}}</p>
+            <p>Price: {{fetchedItem.Price}}</p>
+            <p>Category: {{fetchedItem.Category}}</p>
+            <p>Condition: {{fetchedItem.Condition}}</p>
+            <p>Images: {{fetchedItem.Images}}</p>
+            <p>Location: {{fetchedItem.Location}}</p>
+        </div>
+        <div class="card-footer bg-success text-white">
+            <button type="button" (click)="back()">Back</button>
+        </div>
+    </div>
+</div> -->
+<div>
+    <h2>{{ item.itemName }}</h2>
+    <p>Description: {{ item.description }}</p>
+    <p>Price: {{ item.price }}</p>
+    <p>Category: {{ item.category }}</p>
+    <p>Condition: {{ item.condition }}</p>
+    <p>Images: {{ item.images }}</p>
+    <p>Location: {{ item.location }}</p>
+    <button (click)="goBack()">Back</button>
+  </div>
+  

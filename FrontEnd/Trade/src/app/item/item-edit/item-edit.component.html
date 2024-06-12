@@ -1,0 +1,185 @@
+<!-- <div class="container">
+    <form [formGroup]="myReactiveForm" (ngSubmit)="editItem(myReactiveForm)">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h3>Edit Item</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="ItemName" class="form-label">Item Name</label>
+                   <input type="text" class="form-control" id="ItemName" 
+                   formControlName="ItemName" >
+                </div>
+                <div class="form-group">
+                    <label for="Description" class="form-label">Description</label>
+                    <textarea class="form-control" id="Description" 
+                    formControlName="Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="Price" 
+                    formControlName="Price">
+                </div>
+                <div class="form-group">
+                    <label for="Category" class="form-label">Category</label>
+                    <input type="text" class="form-control" id="Category" 
+                    formControlName="Category">
+                </div>
+                <div class="form-group">
+                    <label for="Condition" class="form-label">Condition</label>
+                    <input type="text" class="form-control" id="Condition" 
+                    formControlName="Condition">
+                </div>
+                <div class="form-group">
+                    <label for="Images" class="form-label">Images URL</label>
+                    <input type="text" class="form-control" id="Images" 
+                    formControlName="Images">
+                </div>
+                <div class="form-group">
+                     <label for="Location" class="form-label">Location</label> -->
+                    <!-- <input type="text" class="form-control" id="Location" 
+                    formControlName="Location">
+                </div>
+            </div>
+            <div class="card-footer bg-info text-white">
+                <button type="submit" class="btn btn-success" 
+                        [disabled]="!myReactiveForm.valid">Update Item</button>
+            </div>
+        </div>
+    </form>
+</div>  -->
+<!-- <form #myForm="ngForm" (ngSubmit)="updateItem(myForm)">
+    <div>
+      <label for="ItemName">Item Name:</label>
+      <input type="text" id="ItemName" name="ItemName" [(ngModel)]="item.itemName"  required>
+    </div>
+    <div>
+      <label for="Description">Description:</label>
+      <textarea id="Description" name="Description" [(ngModel)]="item.description" required></textarea>
+    </div>
+    <div>
+      <label for="Price">Price:</label>
+      <input type="number" id="Price" name="Price" [(ngModel)]="item.price" required>
+    </div>
+    <div>
+      <label for="Category">Category:</label>
+      <input type="text" id="Category" name="Category" [(ngModel)]="item.category" required>
+    </div>
+    <div>
+      <label for="Condition">Condition:</label>
+      <input type="text" id="Condition" name="Condition" [(ngModel)]="item.condition" required>
+    </div>
+    <div>
+      <label for="Images">Images:</label>
+      <input type="text" id="Images" name="Images" [(ngModel)]="item.images" required>
+    </div>
+    <div>
+      <label for="Location">Location:</label>
+      <input type="text" id="Location" name="Location" [(ngModel)]="item.location" required>
+    </div>
+    <button type="submit">Update Item</button>
+    <button (click)="goBack()">Back</button>
+  </form> -->
+
+  <!-- src/app/item/item-edit/item-edit.component.html -->
+<!-- <form #myForm="ngForm" (ngSubmit)="updateItem()">
+  <form #myForm="ngForm" (ngSubmit)="updateItem()">
+  
+    
+    <div>
+      <label for="Description">Description:</label>
+      <textarea id="Description" name="Description" [(ngModel)]="item.description" required></textarea>
+    </div>
+    <div>
+      <label for="Price">Price:</label>
+      <input type="number" id="Price" name="Price" [(ngModel)]="item.price" required>
+    </div>
+    <div>
+      <label for="Category">Category:</label>
+      <input type="text" id="Category" name="Category" [(ngModel)]="item.category" required>
+    </div>
+    <div>
+      <label for="Condition">Condition:</label>
+      <input type="text" id="Condition" name="Condition" [(ngModel)]="item.condition" required>
+    </div>
+    <div>
+      <label for="Images">Images:</label>
+      <input type="text" id="Images" name="Images" [(ngModel)]="item.images" required>
+    </div>
+    <div>
+      <label for="Location">Location:</label>
+      <input type="text" id="Location" name="Location" [(ngModel)]="item.location" required>
+    </div>
+    <button type="submit">Update Item</button>
+    <button type="button" (click)="goBack()">Back</button>
+  </form>
+  
+  <div>
+    <label for="ItemName">Item Name:</label>
+    <input type="text" id="ItemName" name="ItemName" [(ngModel)]="item.itemName" required>
+  </div>
+  <div>
+    <label for="Description">Description:</label>
+    <textarea id="Description" name="Description" [(ngModel)]="item.description" required></textarea>
+  </div>
+  <div>
+    <label for="Price">Price:</label>
+    <input type="number" id="Price" name="Price" [(ngModel)]="item.price" required>
+  </div>
+  <div>
+    <label for="Category">Category:</label>
+    <input type="text" id="Category" name="Category" [(ngModel)]="item.category" required>
+  </div>
+  <div>
+    <label for="Condition">Condition:</label>
+    <input type="text" id="Condition" name="Condition" [(ngModel)]="item.condition" required>
+  </div>
+  <div>
+    <label for="Images">Images:</label>
+    <input type="text" id="Images" name="Images" [(ngModel)]="item.images" required>
+  </div>
+  <div>
+    <label for="Location">Location:</label>
+    <input type="text" id="Location" name="Location" [(ngModel)]="item.location" required>
+  </div>
+  <button type="submit">Update Item</button>
+  <button type="button" (click)="goBack()">Back</button>
+</form> -->
+<div class="container">
+  <form #myForm="ngForm" (ngSubmit)="updateItem()">
+    <div class="form-group">
+      <label for="SellerId" class="form-label">Seller ID</label>
+      <input type="text" class="form-control" id="SellerId" name="SellerId" [(ngModel)]="item.seller.sellerId" readonly>
+    </div>
+    <div class="form-group">
+      <label for="ItemName" class="form-label">Item Name</label>
+      <input type="text" class="form-control" id="ItemName" name="ItemName" [(ngModel)]="item.itemName" required>
+    </div>
+    <div class="form-group">
+      <label for="Description" class="form-label">Description</label>
+      <textarea class="form-control" id="Description" name="Description" [(ngModel)]="item.description" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="Price" class="form-label">Price</label>
+      <input type="number" class="form-control" id="Price" name="Price" [(ngModel)]="item.price" required>
+    </div>
+    <div class="form-group">
+      <label for="Category" class="form-label">Category</label>
+      <input type="text" class="form-control" id="Category" name="Category" [(ngModel)]="item.category" required>
+    </div>
+    <div class="form-group">
+      <label for="Condition" class="form-label">Condition</label>
+      <input type="text" class="form-control" id="Condition" name="Condition" [(ngModel)]="item.condition" required>
+    </div>
+    <div class="form-group">
+      <label for="Images" class="form-label">Images URL</label>
+      <input type="text" class="form-control" id="Images" name="Images" [(ngModel)]="item.images" required>
+    </div>
+    <div class="form-group">
+      <label for="Location" class="form-label">Location</label>
+      <input type="text" class="form-control" id="Location" name="Location" [(ngModel)]="item.location" required>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!myForm.valid">Update Item</button>
+    <button type="button" class="btn btn-secondary" (click)="goBack()">Back</button>
+  </form> 
+</div>

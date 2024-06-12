@@ -1,0 +1,47 @@
+/* Custom CSS for form styling */
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    border: 2px solid #3498db; /* Add a thicker border */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card-header {
+    background-color: #3498db; /* Use a vibrant blue */
+    padding: 20px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.card-body, .card-footer {
+    padding: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border: 2px solid #3498db; /* Add a border */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-success {
+    background-color: #2ecc71; /* Use a green color */
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-success:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}

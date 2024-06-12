@@ -1,0 +1,42 @@
+<nav class="navbar">
+    <a routerLink="/signup" class="nav-link">User Signup</a>
+    <a routerLink="/signupseller" class="nav-link">Seller Signup</a>
+    <a routerLink="/user-login" class="nav-link">User Login</a>
+    <a routerLink="/seller-login" class="nav-link">Seller Login</a>
+  </nav> 
+<div class="wrapper">
+    <div class="registration_form">
+        <div class="title">
+            Sign Up As User
+            Start your Journey in <br>
+            Quick Trade
+        </div>
+        <form (ngSubmit)="submitSignupForm()">
+            <div class="form_wrap">
+                <div class="input_wrap">
+                    <label for="username">Username</label>
+                    <input type="text" [(ngModel)]="signupData.Username" name="Username" required>
+                </div>
+                <div class="input_wrap">
+                    <label for="email">Email Address</label>
+                    <input type="email" [(ngModel)]="signupData.Email" name="Email" required>
+                </div>
+                <div class="input_wrap">
+                    <label for="password">Password</label>
+                    <input type="password" [(ngModel)]="signupData.Password" name="Password" required>
+                </div>
+                <div class="input_wrap">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" [(ngModel)]="signupData.PhoneNumber" name="PhoneNumber">
+                </div>
+                <div class="input_wrap">
+                    <label for="address">Address</label>
+                    <input type="text" [(ngModel)]="signupData.Address" name="Address">
+                </div>
+                <div class="input_wrap">
+                    <button type="submit" class="submit_btn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
